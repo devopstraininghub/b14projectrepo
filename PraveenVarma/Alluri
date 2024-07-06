@@ -1,0 +1,17 @@
+function introduceYourself() {
+    const name = "Praveen Alluri"; 
+    const age = 25; 
+    const profession = "Devops Engineer"; 
+    const hobbies = ["Web surfing", "mountain climbing", "photography"]; 
+
+    console.log("Hello! My name is " + name + ".");
+    console.log("I am " + age + " years old.");
+    console.log("I work as a " + profession + ".");
+    console.log("In my free time, I enjoy:");
+
+    hobbies.forEach(function(hobby, index) {
+        console.log((index + 1) + ". " + hobby);
+    });
+}
+
+introduceYourself();
