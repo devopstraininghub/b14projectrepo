@@ -1,0 +1,27 @@
+import os
+import time
+
+# Directory to monitor
+log_dir = '/opt/Roamware'
+
+# Terms to search for
+search_terms = ['charge', 'SSN', 'NP', 'NAI']
+
+# Store the last read position of each file
+file_positions = {}
+
+def monitor_logs():
+    # Get the list of log files
+    log_files = [f for f in os.listdir(log_dir) if os.path.isfile(os.path.join(log_dir, f))]
+
+    for log_file in log_files:
+        file_path = os.path.join(log_dir, log_file)
+
+        # Initialize the last read position if not already set
+        if log_file not in file_positions:
+            file_positions[log_file] = 0
+
+        # Open the log file
+        with open(file_path, 'r') as f:
+            # Move to
+
