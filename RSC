@@ -1,0 +1,1 @@
+roaming service contral is nothing but RSC which is used for block the data and call for the outbound subscribers.
