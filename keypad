@@ -1,0 +1,37 @@
+Devops Batch14 video day1: https://www.youtube.com/watch?v=6_leokM-ywY&t=3444s
+
+b13 token: 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
+
+Inroduction to Devops and Cloud, Syllabus, Devops topics are explained
+
+
+Devops Batch14 video day2: To create Git central hub account and pudh data is the task
+
+linux basic commands:
+touch f.name                          : Create a file
+ls                                    : Short list display
+ll                                    : Long list
+ls -lrth                              : This displays files in alphabetical order
+ls -la                                : Displays hidden files
+
+mkdir dir.name                        : Folder/Directory is created
+
+cd dirname                            : Change Directory
+cd ..                                 : Back space/exit from a directory
+------
+
+rm -rf fname/dir.name                 : Delete a file/Folder/Directory
+
+clear / ctrl + L                      : Clear Screen
+
+cat fname                             : open a file
+=============================================================
+
+GIT :
+
+git init                                                          : Initilising local Repo
+git config --global user.name "madhukiran"                        : creating user
+git config --global user.email "devopstraininghub@gmail.com"      : Creating email for the user
+git config --list                                                 : To check all the number of users
+
+
