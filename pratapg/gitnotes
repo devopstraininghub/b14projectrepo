@@ -1,0 +1,261 @@
+Devops Batch14 video day1: https://www.youtube.com/watch?v=6_leokM-ywY&t=3444s
+
+b13 token: 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
+
+b14 token: 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
+
+Inroduction to Devops and Cloud, Syllabus, Devops topics are explained
+
+
+Devops Batch14 video day2: To create Git central hub account and pudh data is the task
+
+linux basic commands:
+touch f.name                          : Create a file
+ls                                    : Short list display
+ll                                    : Long list
+ls -lrth                              : This displays files in alphabetical order
+ls -la                                : Displays hidden files
+
+mkdir dir.name                        : Folder/Directory is created
+
+cd dirname                            : Change Directory
+cd ..                                 : Back space/exit from a directory
+------
+
+rm -rf fname/dir.name                 : Delete a file/Folder/Directory
+
+clear / ctrl + L                      : Clear Screen
+
+cat fname                             : open a file
+=============================================================
+
+GIT :
+
+git init                                                          : Initilising local Repo
+git config --global user.name "madhukiran"                        : creating user
+git config --global user.email "devopstraininghub@gmail.com"      : Creating email for the user
+git config --list                                                 : To check all the number of users
+------------
+
+touch file1 
+git status --> UT , wd , red 
+git add    --> ws to staging
+git status --> staging , Green
+git commit -m "msg" file1
+git status 
+git log 
+
+Note:
+1. Search for Windows Credential Manager and delete the user credentials to see a popup for Git login.
+2. Personal access token is used when login credential are asked when data is pushed to central repo
+
+
+Devops Batch14 video day3:
+
+================
+
+git clone URL 
+
+
+===============
+
+git clone https://github.com/devopstraininghub/b11projectrepo.git
+ll
+cd b11projectrepo
+touch mounika
+git add .
+git commit -m "mounika commit"
+git push 
+git pull --rebase 
+git push 
+
+===============
+
+GIT BRANCH 
+
+git branch 
+
+git branch <br.name> 
+
+git checkout <br.name> 
+
+git checkout -b <br.nam>
+
+git merge <br.name>
+
+git push origin <br.name>
+git push https://github.com/devopstraininghub/b11projectrepo.git <br.name>
+
+git branch -d br.name
+git branch -D br.name
+
+git push origin -d br.name
+
+git log --oneline                                           : this displays the commit ID in short
+
+================================
+
+ ==================================================
+cherry-pick
+
+git cherry-pick cid  
+
+-------------
+linux : 
+
+vi or vim / nano editors 
+
+VIM/ VI editor:
+--
+
+vim file3
+--------
+esc i   --- > insert mode 
+....
+. your code 
+....
+
+esc :w  --> to save 
+esc :q  --> to save 
+or
+esc :wq
+or
+esc :wq!
+==========
+
+GIT CONFLICT while merging the branches 
+
+============================
+GIT TAG :
+
+git tag 
+
+git tag <tag.name> 
+
+git checkout <tag.name> 
+
+git tag -d <tag.name> 
+
+git push origin <tag.name> 
+
+git push origin -d <tag.name> 
+
+====================================
+
+FILTERING:
+
+git log --oneline 
+git log --oneline -n 
+git log --author kiran
+git log --since "19-12-2022"
+
+
+==========
+
+==============================
+Alias
+-----
+git log 
+git l
+
+git config --global alias.ss "status"
+
+
+git s
+
+git log
+git config --global alias.l "log"
+git l
+
+
+git log --oneline
+git config --global alias.lo "log --oneline"
+git lO
+
+
+=======================================================
+git stash list
+git stash save "label"
+
+git stash show stash@{x}
+
+POP, APPLY, DROP
+-----------------
+POP - cut
+----
+git stash pop
+
+
+APPLY  - copy
+------
+git stash apply
+
+
+DROP  - delete
+-----
+git stash drop
+
+---------------------
+.git/refs/stash
+
+==================
+
+git amend :
+===========================
+
+git merge vs git rebase
+
+
+$ git log --oneline
+8c19bb0 (HEAD -> master) Merge branch 'rel'
+4a3a2e8 m3
+9a01f87 (rel) r3
+c1f1cb2 m2
+7bfbd19 r2
+b33bd1a m1
+c4e16f8 r1
+1979f65 xyz
+
+==============================
+
+git pull vs git pull --rebase 
+
+====
+git pull vs git fetch 
+
+git pull --- git fetch + git merge origin 
+
+
+
+-----------------------------------------
+GIT REVERT :
+
+git revert cid 
+
+======
+
+SVN VS GIT 
+
+GIT RESET 
+
+==========
+
+OS PROJECT
+FORK 
+
+=======
+
+-----------------------------------
+git reset HEAD fname ---> staging to WS 
+
+git reset --soft cid (n-1)  ----> LR to Staging
+
+git reset --mixed cid (n-1) ----> LR to Workspace 
+----------------
+
+
+git 
+svn  -- subversion 
+bitbucket 
+
+
