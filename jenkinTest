@@ -1,0 +1,3 @@
+import math
+for num in range(2, 5):
+    print(num, end=", ")
