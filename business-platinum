@@ -1,0 +1,3 @@
+If we have cloned the code and made some changes to code and when we try to push the code to central repo we will get error.
+
+At that time we will use git pull --rebase
