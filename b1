@@ -1,0 +1,20 @@
+
+linux commands 
+touch
+mkdir
+pwd
+ls
+ls -lrth
+history
+uname
+
+git basics
+ll
+cd
+cd..
+git add
+fit commit -m
+git show
+git log
+git status
+
